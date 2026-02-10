@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mawbima Motors | Premium Vehicle Sale</title>
+    <meta name="description"
+        content="Find your dream car at Mawbima Motors. Best prices, premium quality, and island-wide delivery.">
+
+    <!-- Tailwind CSS (via CDN for No-NodeJS requirement) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Icon Set -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#8b5cf6',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-900 text-slate-50 overflow-x-hidden selection:bg-blue-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-car-burst text-3xl text-blue-500"></i>
+                    <span class="font-bold text-2xl tracking-wider">MAWBIMA <span
+                            class="text-blue-500">ENTERPRISES</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-white hover:text-blue-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="inventory.html"
+                            class="text-gray-300 hover:text-blue-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Inventory</a>
+                        <a href="about.html"
+                            class="text-gray-300 hover:text-blue-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">About
+                            Us</a>
+                        <a href="contact.html"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-medium transition-all shadow-lg shadow-blue-500/30">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false"
+                        onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden glass" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="inventory.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Inventory</a>
+                <a href="about.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="contact.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
+        <!-- Abstract Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-90"></div>
+            <!-- Gradient Blobs -->
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/30 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl animate-pulse"
+                style="animation-delay: 1s;"></div>
+            <!-- Background Image Overlay -->
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Luxury Car Background" class="w-full h-full object-cover opacity-20 mix-blend-overlay">
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h1 class="text-4xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
+                Drive Your <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Dream</span>
+                Today
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto font-light">
+                Discover an exclusive collection of premium vehicles at Mawbima Motors.
+                Performance, luxury, and reliability in one place.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="inventory.html"
+                    class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold text-lg transition-all shadow-lg shadow-blue-500/40 hover:-translate-y-1">
+                    Explore Inventory <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="contact.html"
+                    class="px-8 py-4 bg-transparent border border-gray-500 hover:border-white text-white rounded-full font-semibold text-lg transition-all hover:bg-white/10">
+                    Book a Test Drive
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-gray-700/50 pt-10">
+                <div>
+                    <h3 class="text-3xl font-bold text-white">500+</h3>
+                    <p class="text-sm text-gray-400 uppercase tracking-widest mt-1">Vehicles Sold</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-white">98%</h3>
+                    <p class="text-sm text-gray-400 uppercase tracking-widest mt-1">Satisfaction</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-white">10+</h3>
+                    <p class="text-sm text-gray-400 uppercase tracking-widest mt-1">Years Experience</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-white">24/7</h3>
+                    <p class="text-sm text-gray-400 uppercase tracking-widest mt-1">Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Inventory Section -->
+    <section class="py-24 bg-slate-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Featured <span class="text-blue-500">Inventory</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Car Card 1 -->
+                <div class="glass rounded-xl overflow-hidden card-hover group">
+                    <div class="relative h-64 overflow-hidden">
+                        <div
+                            class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                            NEW ARRIVAL</div>
+                        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Car"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Tesla Model S Plaid</h3>
+                        <p class="text-blue-400 text-sm mb-4">Electric Performance</p>
+                        <div class="flex justify-between items-center text-gray-400 text-sm mb-6">
+                            <span><i class="fa-solid fa-gauge-high mr-2"></i>1.99s 0-60</span>
+                            <span><i class="fa-solid fa-gas-pump mr-2"></i>Electric</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-white">$108,490</span>
+                            <a href="contact.html"
+                                class="p-3 bg-white/10 hover:bg-blue-600 rounded-full text-white transition-colors">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 2 -->
+                <div class="glass rounded-xl overflow-hidden card-hover group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Car"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Mercedes AMG GT</h3>
+                        <p class="text-blue-400 text-sm mb-4">Luxury Coupe</p>
+                        <div class="flex justify-between items-center text-gray-400 text-sm mb-6">
+                            <span><i class="fa-solid fa-gauge-high mr-2"></i>3.1s 0-60</span>
+                            <span><i class="fa-solid fa-gas-pump mr-2"></i>Petrol</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-white">$145,900</span>
+                            <a href="contact.html"
+                                class="p-3 bg-white/10 hover:bg-blue-600 rounded-full text-white transition-colors">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="glass rounded-xl overflow-hidden card-hover group">
+                    <div class="relative h-64 overflow-hidden">
+                        <div
+                            class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                            HOT DEAL</div>
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Car"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Ferrari Portofino</h3>
+                        <p class="text-blue-400 text-sm mb-4">Italian Masterpiece</p>
+                        <div class="flex justify-between items-center text-gray-400 text-sm mb-6">
+                            <span><i class="fa-solid fa-gauge-high mr-2"></i>3.5s 0-60</span>
+                            <span><i class="fa-solid fa-gas-pump mr-2"></i>Navi</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-white">$227,000</span>
+                            <a href="contact.html"
+                                class="p-3 bg-white/10 hover:bg-blue-600 rounded-full text-white transition-colors">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="inventory.html"
+                    class="inline-block text-white border-b-2 border-blue-500 pb-1 hover:text-blue-400 transition-colors">View
+                    All Vehicles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-slate-800 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Why Choose <span class="text-blue-500">Mawbima Motors?</span>
+                    </h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        We don't just sell cars; we deliver an experience. With over a decade of service in the Sri
+                        Lankan market, we have established ourselves as the premier destination for luxury and
+                        performance vehicles.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-600/20 flex items-center justify-center text-blue-500">
+                                <i class="fa-solid fa-certificate text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-semibold mb-2">Certified Quality</h4>
+                                <p class="text-gray-400 text-sm">Every vehicle undergoes a rigorous 150-point inspection
+                                    before it hits our showroom.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-lg bg-purple-600/20 flex items-center justify-center text-purple-500">
+                                <i class="fa-solid fa-hand-holding-dollar text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-semibold mb-2">Best Financing</h4>
+                                <p class="text-gray-400 text-sm">Exclusive financing rates with top banks to help you
+                                    drive away today.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-lg bg-pink-600/20 flex items-center justify-center text-pink-500">
+                                <i class="fa-solid fa-headset text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-semibold mb-2">After-Sales Support</h4>
+                                <p class="text-gray-400 text-sm">Our relationship doesn't end at the sale. We're here
+                                    for you 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-blue-500 rounded-2xl transform rotate-3 opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1503376763036-066120622c74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Showroom" class="relative rounded-2xl shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-car-burst text-2xl text-blue-500"></i>
+                        <span class="font-bold text-xl tracking-wider">MAWBIMA <span
+                                class="text-blue-500">MOTORS</span></span>
+                    </div>
+                    <p class="text-gray-500 text-sm">
+                        Premier vehicle dealership specializing in luxury and performance cars in Sri Lanka.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-500 transition-colors">Home</a></li>
+                        <li><a href="inventory.html" class="hover:text-blue-500 transition-colors">Inventory</a></li>
+                        <li><a href="about.html" class="hover:text-blue-500 transition-colors">About</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li><i class="fa-solid fa-location-dot mr-2"></i> 123 Colombo Road, Kandy</li>
+                        <li><i class="fa-solid fa-phone mr-2"></i> +94 77 123 4567</li>
+                        <li><i class="fa-solid fa-envelope mr-2"></i> sales@mawbimamotors.lk</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Newsletter</h4>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="bg-gray-800 border-none text-white px-4 py-2 rounded-l-md w-full focus:ring-1 focus:ring-blue-500 outline-none">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors"><i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-600 text-sm">
+                <p>&copy; 2026 Mawbima Motors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
